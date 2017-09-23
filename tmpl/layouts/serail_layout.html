@@ -1,0 +1,7 @@
+{%- extends "layouts/layout.html" -%}
+{% block page_content %}
+    |- [<- includes] _Header:
+      {% include "mixins/_header.html" %}
+      {% block serial_page_content %}{% endblock %}
+    |/_Header
+{% endblock %}
